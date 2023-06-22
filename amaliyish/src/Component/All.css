@@ -1,0 +1,148 @@
+html{
+    font-size: 10px;
+}
+
+nav{
+    height: auto;
+    padding: 20px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    position: sticky;
+    top:0;
+    z-index: 555;
+    backdrop-filter: blur(10px);
+}
+.logo{
+    font-family: 'Cherry Bomb One', cursive;
+}
+nav ul{
+    display: flex;
+    gap:5rem ;
+}
+nav a{
+    color: #fff;
+}
+nav ul a{
+    color: #c2bebe;
+}
+nav ul a:hover ,nav ul a.active{
+    color: #fff;
+}
+
+.navbtns{
+    display: flex;
+    gap: 2rem;
+}
+.navbtns .registr{
+   padding: 1rem 1.5rem;
+   border-radius: 2rem;
+   background-color: transparent;
+   border: none;
+   color: #c2bebe;
+   font-size: 2rem;
+}
+.navbtns .login{
+    padding: 0rem 2.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    border: none;
+}
+
+/* //////////////// */
+.home{
+    width: 100%;
+    height: auto;
+}
+.section1{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 5vw;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+}
+.textbox h1{
+    width: 600px;
+    font-size: 80px;
+    text-align: start;
+}
+.textbox p{
+    width: 450px;
+    font-size: 20px;
+    text-align: start;
+    color: #c2bebe;
+}
+.btns{
+    display: flex;
+    gap: 25px;
+}
+.btns button {
+    border: 0.5px solid yellow;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 20px;
+    transition: all 0.5s linear;
+}
+.btns button:hover {
+    transform: translate(-5px ,-5px);
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.237);
+}
+
+.imgglavni{
+    position: absolute;
+    top: 5vw;
+    right: 15vw;
+}
+
+/* ///////////////// */
+.section2{
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 50px;
+}
+.hisob{
+    width: 80%;
+    height: 450px;
+    margin: 0px auto;
+    background-color: rgba(140, 213, 247, 0.442);
+}
+.hisob h1{
+    font-size: 55px;
+    color: rgb(53, 52, 52);
+}
+.hisobheader form{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 50px;
+    padding: 3vw;
+    gap: 10px;
+}
+.hisobheader form select ,.hisobheader form input{
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 7px;
+}
+.hisobheader form button{
+    border: none;
+    background-color: orange;
+    font-size: 20px;
+    color:black;
+    font-weight: bold;
+}
+.imghisob{
+    position: relative;
+}
