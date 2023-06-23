@@ -108,13 +108,13 @@ nav ul a:hover ,nav ul a.active{
 
 /* ///////////////// */
 .section2{
-    height: 100vh;
+    height: auto;
     background-color: #fff;
-    padding-top: 50px;
+    padding: 50px 0;
 }
 .hisob{
     width: 80%;
-    height: 450px;
+    height: 500px;
     margin: 0px auto;
     background-color: rgba(140, 213, 247, 0.442);
 }
@@ -145,4 +145,78 @@ nav ul a:hover ,nav ul a.active{
 }
 .imghisob{
     position: relative;
+}
+
+/* //////// */
+.section3{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+
+}
+.parcniors{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 80px 0px;
+}
+.parcniors img{
+    height: 100%;
+    cursor: pointer;
+}
+
+.categorys{
+    padding: 50px 20px;
+}
+.categorys h1{
+    font-size: 55px;
+    color: #053e54;
+    text-align: start;
+    line-height: 85px;
+}
+
+
+
+/* ////////////// */
+footer{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    padding: 50px 5vw;
+    align-items: start;
+    justify-content: start;
+    background-color: #e3e3e3;
+}
+.footerp{
+    width: 300px;
+    font-size: 16px;
+}
+footer h4{
+    color: black;
+}
+footer .logo{
+    color: black;
+    font-size: 35px;
+}
+footer ul  {
+    color: grey;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+footer ul {
+   font-size: 20px;
+
+}
+footer ul a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(142, 142, 142);
+    font-weight: 800;
+}
+footer ul a img{
+    width: 40px;
+    height: 40px;
 }

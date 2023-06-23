@@ -9,6 +9,7 @@ import Home from './Component/Home/Home';
 import About from './Component/About';
 import Destination from './Component/Destination';
 import Contact from './Component/Contact';
+import Footer from './Component/Footer/Footer';
 
 function App() {
   const count = useSelector((state) => state.counter.value)
@@ -33,7 +34,7 @@ function App() {
                <Route path='/destination' element={<Destination/>}/>
                <Route path='/contact' element={<Contact/>}/>
           </Routes>
-         
+         <Footer/>
         </Router>
          {/* <div className="cursor"></div> */}
     </div>
