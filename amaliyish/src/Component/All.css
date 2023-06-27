@@ -16,6 +16,8 @@ nav{
 }
 .logo{
     font-family: 'Cherry Bomb One', cursive;
+    font-weight: 500;
+    color: #fff;
 }
 nav ul{
     display: flex;
@@ -24,7 +26,7 @@ nav ul{
 nav a{
     color: #fff;
 }
-nav ul a{
+nav  a{
     color: #c2bebe;
 }
 nav ul a:hover ,nav ul a.active{
@@ -33,22 +35,41 @@ nav ul a:hover ,nav ul a.active{
 
 .navbtns{
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 .navbtns .registr{
-   padding: 1rem 1.5rem;
+    height: 35px;
+    display: flex;
+    align-items: center;
+   padding: 0rem 1.5rem;
    border-radius: 2rem;
    background-color: transparent;
    border: none;
    color: #c2bebe;
    font-size: 2rem;
+   cursor: pointer;
+   transition: all 0.3s linear;
+}
+.navbtns .registr:hover{
+   background-color: #fff;
+   color: #000;
 }
 .navbtns .login{
+    height: 35px;
     padding: 0rem 2.5rem;
     background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
     border-radius: 2rem;
     font-size: 2rem;
     border: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.navbtns .login:hover{
+    transform: translate(2px);
 }
 
 /* //////////////// */
@@ -96,7 +117,7 @@ nav ul a:hover ,nav ul a.active{
     transition: all 0.5s linear;
 }
 .btns button:hover {
-    transform: translate(-5px ,-5px);
+    transform: translate(-3px ,-3px);
     box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.237);
 }
 
@@ -176,6 +197,40 @@ nav ul a:hover ,nav ul a.active{
     text-align: start;
     line-height: 85px;
 }
+/* ///////////////////////// */
+.about{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px ;
+}
+.about img{
+    width: 100%;
+    height: 100%;
+}
+.img1{grid-column: span 1;}
+.img4{grid-column: span 2;}
+.img7{grid-column: span 2;}
+
+/* ///////////////////// */
+.contact{
+    width: 100%;
+    height: auto;
+}
+.map-wrap {
+    position: relative;
+    width: 50%;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .map {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+  }
 
 
 

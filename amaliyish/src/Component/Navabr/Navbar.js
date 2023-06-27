@@ -12,16 +12,13 @@ const Navbar = () => {
             <li>
                 <NavLink to="/about">About</NavLink>
             </li>
-            <li>
-                <NavLink to="/destination">Destination</NavLink>
-            </li>
                 <li>
                     <NavLink to="/contact">Contact</NavLink>
                 </li>
         </ul>
         <div className="navbtns">
-            <button className="registr">Register</button>
-            <button className="login">Login</button>
+            <NavLink to={"/register"} className="registr">Register</NavLink>
+            <NavLink to={"/login"} className="login">Login</NavLink>
         </div>
     </nav>
   )

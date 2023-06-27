@@ -59,7 +59,7 @@ const Home = () => {
                            <option value="Toshkent" placeholder='Toshkent' >Toshkent</option>
                        </select>
                        <select >
-                           <option value="" defaultValue>Qayerdan ?</option>
+                           <option value="" defaultValue>Qayerga ?</option>
                            <option value="namangan" placeholder='Namangan' >Namangan</option>
                            <option value="Andijon" placeholder='Andijon' >Andijon</option>
                            <option value="Toshkent" placeholder='Toshkent' >Toshkent</option>
