@@ -205,9 +205,18 @@ nav ul a:hover ,nav ul a.active{
     grid-template-columns: repeat(3,1fr);
     gap: 10px ;
 }
-.about img{
+.about .img{
     width: 100%;
     height: 100%;
+    overflow: hidden;
+}
+.about .img:hover img{
+    transform: scale(1.2);
+}
+.about .img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s linear;
 }
 .img1{grid-column: span 1;}
 .img4{grid-column: span 2;}
@@ -217,20 +226,208 @@ nav ul a:hover ,nav ul a.active{
 .contact{
     width: 100%;
     height: auto;
+    display: grid;
+    grid-template-areas:"img img img img"
+                        "map map text text" 
+                        "map map text text" ;
 }
 .map-wrap {
     position: relative;
-    width: 50%;
+    width: 100%;
     margin: 20px;
     border-radius: 15px;
     overflow: hidden;
+    grid-area: map;
   }
-  
+  .contactimgfone{
+    width: 100%;
+    height: auto;
+    grid-area: img;
+  }
   .map {
     position: absolute;
     width: 100%;
-    height: 600px;
+    min-height: 600px;
+    border-radius: 15px;
+
   }
+  .textblock{
+    grid-area: text;
+  }
+
+  .textblock{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textblock h1{
+    font-size: 55px;
+
+  }
+  .textblock form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .textblock form label{
+   font-size: 25px  ;
+  }
+  .textblock form input{
+   font-size: 25px  ;
+   border: none;
+   outline: none;
+   width: 75%;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  .textblock form textarea{
+   font-size: 25px  ;
+   border: none;
+   outline: none;
+   width: 75%;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  .textblock form button{
+   font-size: 25px  ;
+   border: 1px solid rgb(109, 109, 109);
+   outline: none;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #053e54;
+   color: white;
+  }
+  .textblock a{
+   font-size: 25px  ;
+   border: 1px solid rgb(109, 109, 109);
+   outline: none;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #053e54;
+   color: white;
+  }
+
+/* //////////////////// */
+
+
+
+
+.registr  h1{
+  font-size: 55px;
+
+}
+.registr  form{
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #2d3132;
+
+}
+.registr  form label{
+ font-size: 25px  ;
+}
+.registr  form input{
+ font-size: 25px  ;
+ border: none;
+ outline: none;
+ width: 70%;
+ padding: 10px;
+ border-radius: 10px;
+}
+.registr  form textarea{
+ font-size: 25px  ;
+ border: none;
+ outline: none;
+ width: 75%;
+ padding: 10px;
+ border-radius: 10px;
+}
+.registr  form button{
+ font-size: 25px  ;
+ border: 1px solid rgb(109, 109, 109);
+ outline: none;
+ padding: 10px 20px;
+ width: 400px;
+ border-radius: 10px;
+ background-color: #053e54;
+ color: white;
+}
+.registr  a{
+ font-size: 25px  ;
+ border: 1px solid rgb(109, 109, 109);
+ outline: none;
+ padding: 10px;
+ border-radius: 10px;
+ color: white;
+ text-decoration: underline;
+}
+/* ////////////// */
+
+
+.login  h1{
+    font-size: 55px;
+  
+  }
+  .login  form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #2d3132;
+  
+  }
+  .login  form label{
+   font-size: 25px  ;
+  }
+  .login  form input{
+   font-size: 25px  ;
+   border: none;
+   outline: none;
+   width: 70%;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  .login  form textarea{
+   font-size: 25px  ;
+   border: none;
+   outline: none;
+   width: 75%;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  .login  form button{
+   font-size: 25px  ;
+   border: 1px solid rgb(109, 109, 109);
+   outline: none;
+   padding: 10px 20px;
+   width: 400px;
+   border-radius: 10px;
+   background-color: #053e54;
+   color: white;
+  }
+  .login  a{
+   font-size: 25px  ;
+   border: 1px solid rgb(109, 109, 109);
+   outline: none;
+   padding: 10px;
+   border-radius: 10px;
+   color: white;
+   text-decoration: underline;
+  }
+  /* ////////////// */
+
+
+
 
 
 

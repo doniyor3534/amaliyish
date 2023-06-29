@@ -11,7 +11,31 @@ import img7 from "../img/gallery7.webp";
 
 export const Gallery = () => {
   return (
-    <Carousel cols={2} rows={1} gap={10} loop>
+    <Carousel cols={3} rows={2} gap={10}  loop>
+      <Carousel.Item className='galler_item'>
+        <img width="100%" height={"400px"} src={img1} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" height={"400px"}  src={img2} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" height={"400px"}  src={img3} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" height={"400px"}  src={img4} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" height={"400px"}  src={img5} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" height={"400px"}  src={img6} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" height={"400px"}  src={img7} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img width="100%" height={"400px"}  src={img3} />
+      </Carousel.Item>
       <Carousel.Item className='galler_item'>
         <img width="100%" height={"400px"} src={img1} />
       </Carousel.Item>

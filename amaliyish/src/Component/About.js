@@ -10,13 +10,18 @@ import img7 from "../img/gallery7.webp";
 const About = () => {
   return (
     <div className='about'>
-         <img className='img1' src={img1} alt="" />
-         <img className='img2' src={img2} alt="" />
-         <img className='img3' src={img3} alt="" />
-         <img className='img4' src={img4} alt="" />
-         <img className='img5' src={img5} alt="" />
-         <img className='img6' src={img6} alt="" />
-         <img className='img7' src={img7} alt="" />
+         <div className="img1 img"><img src={img1} alt="" /></div>
+         <div className="img2 img"><img src={img2} alt="" /></div>
+         <div className="img2 img"><img src={img2} alt="" /></div>
+         <div className="img3 img"><img src={img3} alt="" /></div>
+         <div className="img4 img"><img src={img4} alt="" /></div>
+         <div className="img4 img"><img src={img4} alt="" /></div>
+         <div className="img5 img"><img src={img5} alt="" /></div>
+         <div className="img6 img"><img src={img6} alt="" /></div>
+         <div className="img6 img"><img src={img6} alt="" /></div>
+         <div className="img6 img"><img src={img6} alt="" /></div>
+         <div className="img6 img"><img src={img6} alt="" /></div>
+         <div className="img7 img"><img src={img7} alt="" /></div>
     </div>
   )
 }
