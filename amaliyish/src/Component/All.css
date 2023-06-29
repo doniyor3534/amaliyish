@@ -5,9 +5,10 @@ html{
 nav{
     height: auto;
     padding: 20px 5vw;
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: space-between;
+    grid-template-columns: 40% 40% 20%;
     font-size: 2rem;
     position: sticky;
     top:0;
@@ -18,6 +19,10 @@ nav{
     font-family: 'Cherry Bomb One', cursive;
     font-weight: 500;
     color: #fff;
+    font-size: 35px;
+}
+.menu{
+    display: none;
 }
 nav ul{
     display: flex;
@@ -43,7 +48,7 @@ nav ul a:hover ,nav ul a.active{
     display: flex;
     align-items: center;
    padding: 0rem 1.5rem;
-   border-radius: 2rem;
+   border-radius: 0rem;
    background-color: transparent;
    border: none;
    color: #c2bebe;
@@ -62,7 +67,7 @@ nav ul a:hover ,nav ul a.active{
     color: #000;
     display: flex;
     align-items: center;
-    border-radius: 2rem;
+    border-radius: 0rem;
     font-size: 2rem;
     border: none;
     cursor: pointer;
@@ -79,7 +84,6 @@ nav ul a:hover ,nav ul a.active{
 }
 .section1{
     position: relative;
-    width: 100%;
     height: 800px;
     display: flex;
     align-items: center;
@@ -114,7 +118,7 @@ nav ul a:hover ,nav ul a.active{
     color: #fff;
     padding: 5px 20px;
     font-size: 20px;
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
 }
 .btns button:hover {
     transform: translate(-3px ,-3px);
@@ -199,7 +203,6 @@ nav ul a:hover ,nav ul a.active{
 }
 /* ///////////////////////// */
 .about{
-    width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -224,7 +227,6 @@ nav ul a:hover ,nav ul a.active{
 
 /* ///////////////////// */
 .contact{
-    width: 100%;
     height: auto;
     display: grid;
     grid-template-areas:"img img img img"
@@ -471,4 +473,330 @@ footer ul a {
 footer ul a img{
     width: 40px;
     height: 40px;
+}
+
+
+
+
+@media (max-width:420px) {
+   nav{
+    grid-template-columns: 100%;
+   }
+   nav ul{
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 0px;
+    transition: all 0.5s linear;
+    opacity: 1;
+   }
+   nav.active ul{
+    padding: 0px 0px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+   }
+   nav .navbtns{
+    justify-content: center;
+    opacity: 1;
+    transition: all 0.5s linear;
+   }
+   nav.active .navbtns{
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+   }
+   .logo{
+    font-size: 25px;
+   }
+
+   .menu{
+    display: inline-block;
+    width: 40px;
+    background-color: transparent;
+    color: white;
+   }
+   .navleft{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+/* //////home//////////// */
+.section1{
+    flex-direction: column;
+    height: 500px;
+}
+.imgglavni{
+    width: 80%;
+    top: 300px;
+}
+.textbox h1 {
+    width: 100%;
+    font-size: 35px;
+    text-align: start;
+}
+.textbox p {
+    width: 100%;
+    font-size: 17px;
+    text-align: start;
+    color: #c2bebe;
+}
+.btns button {
+    border: 0.5px solid yellow;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 16px;
+    transition: all 0.2s linear;
+}
+.categorycards{
+    height: 300px;
+    position: relative;
+}
+/* ////////////////// */
+.hisob{
+    width: 100%;
+    height: auto;
+    z-index: 55;
+}
+.hisobheader{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+.hisobheader form{
+    display: flex;
+    flex-direction: column;
+
+}
+.imghisob{
+    width: 80%;
+    margin-left: 15%;
+}
+.parcniors{
+    overflow-x: scroll;
+    padding: 0px 0px 0px;
+}
+/* ////////////////// */
+.about{
+    padding: 20px 3%;
+}
+/* ////////////////// */
+.contact{
+    height: auto;
+    display: grid;
+    grid-template-areas:"img img img img"
+                        "text text text text"
+                        "map map map map"  ;
+}
+.map-wrap {
+    position: relative;
+    width: 90%;
+    margin: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    grid-area: map;
+  }
+  .contactimgfone{
+    width: 100%;
+    height: auto;
+    grid-area: img;
+  }
+  .map {
+    position: absolute;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 15px;
+
+  }
+  .textblock{
+    grid-area: text;
+  }
+
+  .textblock{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textblock h1{
+    font-size: 35px;
+    margin: 20px 0px;
+
+  }
+  .textblock form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+  .textblock form label{
+   font-size: 20px  ;
+  }
+  .textblock form input{
+   font-size: 20px  ;
+   border: none;
+   outline: none;
+   width: 85%;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  .textblock form textarea{
+   font-size: 20px  ;
+   border: none;
+   outline: none;
+   width: 85%;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  .textblock form button{
+    width: 200px;
+   font-size: 25px  ;
+   border: 1px solid rgb(109, 109, 109);
+   outline: none;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: #053e54;
+   color: white;
+  }
+  .textblock a{
+   font-size: 20px  ;
+   border: 1px solid rgb(109, 109, 109);
+   outline: none;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: transparent;
+   color: white;
+  }
+
+/* //////////////////// */
+
+
+
+
+.registr  h1{
+    font-size: 35px;
+  
+  }
+  .registr  form{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #2d3132;
+  
+  }
+  .registr  form label{
+   font-size: 20px  ;
+  }
+  .registr  form input{
+   font-size: 20px  ;
+   border: none;
+   outline: none;
+   width: 80%;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  .registr  form textarea{
+   font-size: 20px  ;
+   border: none;
+   outline: none;
+   width: 75%;
+   padding: 10px;
+   border-radius: 10px;
+  }
+  .registr  form button{
+   font-size: 25px  ;
+   border: 1px solid rgb(109, 109, 109);
+   outline: none;
+   padding: 10px 20px;
+   width: 200px;
+   border-radius: 10px;
+   background-color: #053e54;
+   color: white;
+  }
+  .registr  a{
+   font-size: 25px  ;
+   border: 1px solid rgb(109, 109, 109);
+   outline: none;
+   padding: 10px;
+   border-radius: 10px;
+   color: white;
+   text-decoration: underline;
+  }
+  /* ////////////// */
+  
+  
+  .login  h1{
+      font-size: 35px;
+    
+    }
+    .login  form{
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 15px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #2d3132;
+    
+    }
+    .login  form label{
+     font-size: 20px  ;
+    }
+    .login  form input{
+     font-size: 20px  ;
+     border: none;
+     outline: none;
+     width: 80%;
+     padding: 10px;
+     border-radius: 10px;
+    }
+    .login  form textarea{
+     font-size: 20px  ;
+     border: none;
+     outline: none;
+     width: 85%;
+     padding: 10px;
+     border-radius: 10px;
+    }
+    .login  form button{
+     font-size: 25px  ;
+     border: 1px solid rgb(109, 109, 109);
+     outline: none;
+     padding: 10px 20px;
+     width: 200px;
+     border-radius: 10px;
+     background-color: #053e54;
+     color: white;
+    }
+    .login  a{
+     font-size: 25px  ;
+     border: 1px solid rgb(109, 109, 109);
+     outline: none;
+     padding: 10px;
+     border-radius: 10px;
+     color: white;
+     text-decoration: underline;
+    }
+    /* ////////////// */
+  
+/* ////////////////// */
+
+  
+
+
+
+
+   footer{
+    grid-template-columns: 100%;
+    gap: 25px;
+   }
+
+
+
 }

@@ -27,7 +27,7 @@ function App() {
           </Routes>
          <Footer/>
         </Router>
-         {/* <div className="cursor"></div> */}
+         
     </div>
   )
 }

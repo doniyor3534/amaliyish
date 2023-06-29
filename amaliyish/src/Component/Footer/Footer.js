@@ -24,7 +24,7 @@ const Footer = () => {
             <a href=""><img src={facebook} alt="" />facebook</a>
             <a href=""><img src={twitter} alt="" />twitter</a>
             <a href=""><img src={telegram} alt="" />telegram</a>
-            <a href=""><img src={instagram} alt="" />instagram</a>
+            <a href="https://instagram.com/doniyor35341"><img src={instagram} alt="" />instagram</a>
         </ul>
 
     </footer>
